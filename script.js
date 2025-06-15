@@ -51,3 +51,22 @@
 //   alert("clicked");
 // });
 
+
+
+//event propagantion
+  document.getElementById("outer").addEventListener("click", () => {
+    alert("clicked outer");
+  });
+
+  document.getElementById("inner").addEventListener("click", (e) => {
+    alert("clicked buttom");
+    e.stopPropagation(); 
+  });
+
+
+  //event delegation
+ document.getElementById("list").addEventListener("click", function (e) {
+    if (e.target.tagName === "LI") {
+      alert("you clicked " + e.target.innerText + " element");
+    }
+  });
