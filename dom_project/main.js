@@ -6,4 +6,10 @@
  }
 
 
- 
+ //add-item page
+    function addItem() {
+      const ul = document.getElementById("itemList");
+      const li = document.createElement("li");
+      li.textContent = "new item added";
+      ul.appendChild(li);
+    }
