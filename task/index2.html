@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <style>
+    body {
+      font-family: Tahoma;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+    h2 {
+      color: #333;
+    }
+    #todoInput {
+      padding: 10px;
+      width: 60%;
+    }
+    #addBtn {
+      padding: 10px 15px;
+      margin-right: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background-color: white;
+      margin: 5px 0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .deleteBtn {
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>The list of to do list</h2>
+
+  <input type="text" id="todoInput" placeholder="Write a new job">
+  <button id="addBtn">Add</button>
+
+  <ul id="todoList">
+  
+  </ul>
+
+ 
+<script src="task.js"></script>
+</body>
+</html>
