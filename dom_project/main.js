@@ -21,3 +21,15 @@
       document.body.classList.add("bg-blue-100");
     });
 
+    //mouse-events.
+      const box = document.getElementById("hoverBox");
+
+    box.addEventListener("mouseover", () => {
+      box.classList.remove("bg-white", "text-black");
+      box.classList.add("bg-blue-500", "text-white");
+    });
+
+    box.addEventListener("mouseout", () => {
+      box.classList.remove("bg-blue-500", "text-white");
+      box.classList.add("bg-white", "text-black");
+    });
