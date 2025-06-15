@@ -13,3 +13,11 @@
       li.textContent = "new item added";
       ul.appendChild(li);
     }
+
+
+//event-listener
+ document.getElementById("bgBtn").addEventListener("click", function () {
+      document.body.classList.remove("bg-white");
+      document.body.classList.add("bg-blue-100");
+    });
+
