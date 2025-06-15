@@ -1,3 +1,8 @@
+  // change text page
+    function changeText() {
+      document.getElementById("text1").textContent = "Text changed successfully!";
+    }
+ 
  //change style page
  function changeStyle() {
       const el = document.getElementById("styleText");
@@ -15,13 +20,13 @@
     }
 
 
-//event-listener
+//event-listener page
  document.getElementById("bgBtn").addEventListener("click", function () {
       document.body.classList.remove("bg-white");
       document.body.classList.add("bg-blue-100");
     });
 
-    //mouse-events.
+    //mouse-events. page
       const box = document.getElementById("hoverBox");
 
     box.addEventListener("mouseover", () => {
